@@ -5,7 +5,7 @@ layout: archive
 {{ content }}
 
 <center>
-  <h1 style="color: ">Poster RAW 2023</h1>
+  <h1 style="color:">Poster RAW 2023</h1>
   <object
     data="{{ site.url }}{{ site.baseurl }}/Poster_RAW_2023.pdf"
     width="1000"
@@ -44,13 +44,53 @@ layout: archive
   the FEF might be crucial in modulating these areas' attention.
 </p>
 
-<h4 id="background">Background</h4>
-
 <h4 id="method">Method</h4>
+<p>The participants completed five experimental blocks, 90 trials each, resulting in a total of 450 trials per participant. 
+  Between the blocks, the head position was controlled using the head-positioning coils to ensure that the overall movements were not greater than 1 cm.
+  One trial took 6 seconds. It consisted of a baseline time of 1 second, 4.5 seconds of the presentation of the stimulus and 0.5 seconds of masked images. 
+  The latter was included to allow for delayed responses by the participants. Before each trial, there was an interval of 2.55 seconds, in addition to a random amount between 0 and 100 milliseconds, during which a visual cue (75% cue validity) presented the target on what the participant should focus on during the trial. 
+  The participants either had to attend to changes in the eyes of the facial stimuli ("E" for eyes), to changes in the mouth ("M" for mouth) or attend to changes in the identity of the facial stimuli ("P" for person or identity).
+  Participants were then asked to press a button when they detected one of three targets, depending on the cue given before the trial. For the cue for eyes, participants had to respond to an eye gaze towards the right side. 
+  For the cue for mouth, they had to respond to the tongue sticking out, and for the cue for identity, participants had to respond to the appearance of a specific face identity.
+  The analysis was performed using the FieldTrip (Oostenveld et al., 2011) and Brainstorm (Tadel et al., 2011) toolboxes. The full code for the analysis script can be found on this  <a href="https://codeberg.org/schroeder-jl/Masters-Thesis-Code-Modulation-Face-Processing.git">Codeberg-repository</a>.
+  An 'Attend IN - Attend OUT' contrast was calculated for the different conditions. This means, that the mean of the non attended conditions was subtracted from the data of the one attended condition.
+  Overall, the data was separated into the frequency bands of theta (5 - 8 Hz), alpha (8 - 12 Hz), beta (15 - 25 Hz), and gamma (30 - 100 Hz) for the analysis.
+  Regarding the selection of the parcels for the regions of interest (ROIs), an anatomical likelyhood estimation (ALE) was performed on the based of the MNI-coordinates regarding the FFA, OFA, and STS.
+  Afterwards, the HCP-MMP 1.0 atlas was overlayed onto these points and the corresponding parcels were selected based on visual inspection.
+  Therefore, the IFJa/p, FEF, FFC, VVC, V4, TPOJ2, LIPd, MT, and PeEC parcels were chosen as the ROIs.
+  The funcitoal connecitvitiy analysis was performed using the imaginary part of the coherency, in a seed-based connecitvity analysis, using the individual ROIs as the seed regions.
+  For the statistics, t-test against zero (FDR-corrected) were performed.
+</p>
 
 <h4 id="results-and-discussion">Results and Discussion</h4>
+Regarding the spectral activity, there was significant modulation in the attend to mouth condition in theta regarding the MT-parcel and the FEF-parcel in theta frequency ranges and regarding the FEF in beta frequency ranges.
+Additionally, the attend to identity condition showed significant modulation in alpha frequency ranges regarding the MT-parcel and the PeEC parcel.
+There were no significant deviations between the conditions in other conditions or frequency bands.
+For the seed-based connectivity analysis, there was a significant increase in functional connectivity between the FEF and the PeEC in the attend to identity condition in the alpha frequency band and a increased connectivity in the attend to eyes condition in alpha between the IFJa and TPOJ2 parcel.
+Lastly, there was an increased connectivity between the IFJa and the TPOJ2 parcels, and a decreased connecitvity between the IFJa and FEF parcels in the attend to mouth condition in the beta frequency band.
+
+The spectral activity of the MT in the attend to mouth and attend to identity conditions could either speak for a perception of motion during the stimuli, or one could interpret it rather as an acitvity of the OFA, as the MT parcel is very close to the typically defined area of the OFA.
+Additionally, the decreased spectral activity in theta and beta frequency bands in the attend to mouth condition regarding the FEF, in combination to the increased connectivity between the IFJa and the TPOJ2 parcel and the decreased connectivity between the IFJa and the FEF could speak for a higher effect of feature or object attention in the attend to mouth condition.
+In the attend to eyes condition, the increased functional connectivity between the IFJa and the TPOJ2 parcel shows an effect of feature or object attention in this condition, as well as being in line with the previously reported functional role of the STS(TPOJ2).
+Finally, in the attend to identity condition, the modulation of the PeEC parcel, as well as the functional connectivity between the FEF and the PeEC in this condition in the alpha frequency band, speak for a role of the PeEC during facial identity recognition or processing, in line with previous reports.
+The PeEC was also shown to be part of the FFA-complex in the HCP-MMP 1.0 atlas.
+It additionally, also suggests and increased effect of spatial attention during face identity processing and an effect of holistic processing.
+This is especially interesting, as focusing on the eyes, and therefore processing the eyes, was showed to be very important during face identity processing, but there seems to be a significant deviation between the two conditions, suggesting an holistic effect.
+
+<h4 id="conclusion">Conclusion</h4>
+Attention modulates the spectral activity and the functional connecitivty of the brain.
+Especially, the FEF and the IFJa play a major role in the functional connectivity of the brain.
+These results are mostly in line with previous reports and suggest an effect of holistic face processing during face-identity processing and recognition.
 
 <h1 class="unnumbered" id="figures">Figures</h1>
+
+<figure id="fig:ALE">
+  <img src="{{ site.url }}{{ site.baseurl }}/figures/ALE-MNIs.png" />
+  <figcaption>
+    FFA, OFA and STS on the right hemisphere of the HCP-MMP (Glasser et al., 2016), applied on the FreeSurfer average brain template (Fischl, Sereno, Tootell, et al., 1999); (50% smoothing applied).
+  </figcaption>
+</figure>
+
 <figure id="fig:BOT_theta">
   <img src="{{ site.url }}{{ site.baseurl }}/figures/BOT-theta-Brain_TFR.jpg" />
   <figcaption>
@@ -82,9 +122,7 @@ layout: archive
 </figure>
 
 
-<div id="refs" class="references csl-bib-body hanging-indent" role="list"></div>
-<section
-  id="footnotes"
-  class="footnotes footnotes-end-of-document"
-  role="doc-endnotes"
-></section>
+<h1 id='references'>References</h1>
+
+<p>Glasser et al., (2016). <i>A Multi-Modal Parcellation of Human Cerebral Cortex</i>. Nature.</p>
+<p>de Vries, E.  &#38; Baldauf, D., (2019). <i>Attentional Weighting in the Face Processing Network: A Magnetic Response Image-guided Magnetoencephalography Study Using Multiple Cyclic Entrainments</i>. Journal of Cognitive Neuroscience.</p>
