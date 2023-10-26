@@ -44,10 +44,24 @@ layout: archive
   the FEF might be crucial in modulating these areas' attention.
 </p>
 
+
+<h4 id="introduction">Introduction</h4>
+<p>
+  Face processing is one of most important skills in social interaction.
+  There was shown to be functionally and spatially separate face-selective regions (Freiwald & Tsao, 2010; Haxby et al., 2001) which are build-up in a hierarchical fashion (Wang et al., 2016, de Vries & Baldauf, 2019).
+  This then so called "core face processing network" (e.g., Haxby et al., 2000) includes regions like the fusiform face area (FFA) (e.g., Kanwisher et al., 1997), the occipital face area (OFA) (e.g., Puce et al., 1996) and a region in the superior-temporal sulcus (STS) (e.g., Hoffman & Haxby, 2000).
+  These are also the most studied face-selective regions. The OFA is believed to active during face categorization and facial identity recognition, the OFA was suggested to be specialized for processing specific local facial information, while the STS was suggested to be focused on processing eye gaze.
+  Additionally, there was showen to exist the extended face processing network (e.g., Haxby et al., 2000), containing areas like the amygdala, the insula, and the inferior frontal gyrus.
+  Further, regarding selective attention, studies have suggested that the prefrontal cortex, and specifically frontal eye field (FEF) and inferior frontal junction (IFJ) play central role in attention (Bedini et al., 2023, Soyuhos & Baldauf, 2023).
+  The FEF appears to be more related in processing spatial information, while the IFJ appears to be more related to non-spatial information processing.
+  Therefore, this study tries to answer the question "Is there a modulation of spectral activity and functional connectivity patterns in a face detection task based on what the covert spatial attention is set on?".
+</p>
+
 <h4 id="method">Method</h4>
 <p> Ten participants took part in the original MEG study (de Vries & Baldauf, 2019).
-  They had to covertly attend to composite face stimuli.
-  The participants completed five experimental blocks, 90 trials each, resulting in a total of 450 trials per participant. 
+  Additionally, anatomical scans were taken for each participat.
+  The participants had to covertly attend to composite face stimuli.
+  They completed five experimental blocks, 90 trials each, resulting in a total of 450 trials per participant. 
   Between the blocks, the head position was controlled using the head-positioning coils to ensure that the overall movements were not greater than 1 cm.
   One trial took 6 seconds. It consisted of a baseline time of 1 second, 4.5 seconds of the presentation of the stimulus and 0.5 seconds of masked images. 
   The latter was included to allow for delayed responses by the participants. Before each trial, there was an interval of 2.55 seconds, in addition to a random amount between 0 and 100 milliseconds, during which a visual cue (75% cue validity) presented the target on what the participant should focus on during the trial. 
@@ -65,7 +79,7 @@ layout: archive
 </p>
 
 <h4 id="results-and-discussion">Results and Discussion</h4>
-Regarding the spectral activity, there was significant modulation in the attend to mouth condition in theta regarding the MT-parcel and the FEF-parcel in theta frequency ranges and regarding the FEF in beta frequency ranges.
+<p> Regarding the spectral activity, there was significant modulation in the attend to mouth condition in theta regarding the MT-parcel and the FEF-parcel in theta frequency ranges and regarding the FEF in beta frequency ranges.
 Additionally, the attend to identity condition showed significant modulation in alpha frequency ranges regarding the MT-parcel and the PeEC parcel.
 There were no significant deviations between the conditions in other conditions or frequency bands.
 For the seed-based connectivity analysis, there was a significant increase in functional connectivity between the FEF and the PeEC in the attend to identity condition in the alpha frequency band and a increased connectivity in the attend to eyes condition in alpha between the IFJa and TPOJ2 parcel.
@@ -78,46 +92,50 @@ Finally, in the attend to identity condition, the modulation of the PeEC parcel,
 The PeEC was also shown to be part of the FFA-complex in the HCP-MMP 1.0 atlas (Glasser et al., 2016).
 It additionally, also suggests and increased effect of spatial attention during face identity processing and an effect of holistic processing.
 This is especially interesting, as focusing on the eyes, and therefore processing the eyes, was showed to be very important during face identity processing, but there seems to be a significant deviation between the two conditions, suggesting an holistic effect.
+</p>
 
 <h4 id="conclusion">Conclusion</h4>
+<p> 
 Attention modulates the spectral activity and the functional connecitivty of the brain.
 Especially, the FEF and the IFJa play a major role in the functional connectivity of the brain.
 These results are mostly in line with previous reports and suggest an effect of holistic face processing during face-identity processing and recognition.
 <br />
+</p>
 
 <h1 class="unnumbered" id="figures">Figures</h1>
 <figure id="fig:ALE">
   <img src="{{ site.url }}{{ site.baseurl }}/figures/ALE-MNIs.png" />
   <figcaption>
-    FFA, OFA and STS on the right hemisphere of the HCP-MMP (Glasser et al., 2016), applied on the FreeSurfer average brain template (Fischl, Sereno, Tootell, et al., 1999); (50% smoothing applied).
+    <i>Note.</i> FFA, OFA and STS on the right hemisphere of the HCP-MMP (Glasser et al., 2016), applied on the FreeSurfer average brain template (Fischl, Sereno, Tootell, et al., 1999); (50% smoothing applied).
   </figcaption>
 </figure>
 
 <figure id="fig:ROIs">
   <img src="{{ site.url }}{{ site.baseurl }}/figures/ROIs.png" />
   <figcaption>
-    Regions of interest (IFJa/p, FEF, FFC, VVC, V4, TPOJ2, LIPd, MT, and PeEC parcels), displayed in the right hemisphere.
+    <i>Note.</i> Regions of interest (IFJa/p, FEF, FFC, VVC, V4, TPOJ2, LIPd, MT, and PeEC parcels), displayed in the right hemisphere.
+    In addition, the approximate ALE-locations are also overlayed.
   </figcaption>
 </figure>
 
 <figure id="fig:BOT_theta">
   <img src="{{ site.url }}{{ site.baseurl }}/figures/BOT-theta-Brain_TFR.jpg" />
   <figcaption>
-    Significant spectral activity in the attend to mouth-condition in the theta band (right
+    <i>Note.</i> Significant spectral activity in the attend to mouth-condition in the theta band (right
     FEF and right MT).
   </figcaption>
 </figure>
 <figure id="fig:BOT_beta">
   <img src="{{ site.url }}{{ site.baseurl }}/figures/BOT-beta-Brain_TFR.jpg" />
   <figcaption>
-    Significant spectral activity in the attend to mouth-condition in the beta band (right
+    <i>Note.</i> Significant spectral activity in the attend to mouth-condition in the beta band (right
     FEF).
   </figcaption>
 </figure>
 <figure id="fig:ID_alpha">
   <img src="{{ site.url }}{{ site.baseurl }}/figures/ID-alpha-Brain_TFR.jpg" />
   <figcaption>
-    Significant spectral activity in the attend to identity-condition in the alpha band (right
+    <i>Note.</i> Significant spectral activity in the attend to identity-condition in the alpha band (right
     PeEC and right MT).
   </figcaption>
 </figure>
@@ -125,7 +143,7 @@ These results are mostly in line with previous reports and suggest an effect of 
 <figure id="fig:FC1">
   <img src="{{ site.url }}{{ site.baseurl }}/figures/functional-connectivity-figure.png" />
   <figcaption>
-    Significant functional connecitvity (imaginary part of coherency) in different conditions and frequency bands.
+    <i>Note.</i> Significant functional connecitvity (imaginary part of coherency) in different conditions and frequency bands.
     (A): Attend to identity condition in the alpha band. (B): Attend to eyes condition in the alpha band. (C): Attend to mouth condition in the beta band.
   </figcaption>
 </figure>
@@ -134,5 +152,5 @@ These results are mostly in line with previous reports and suggest an effect of 
 <h1 id='references'>References</h1>
 
 <p>de Vries, E.  &#38; Baldauf, D., (2019). <i>Attentional Weighting in the Face Processing Network: A Magnetic Response Image-guided Magnetoencephalography Study Using Multiple Cyclic Entrainments</i>. Journal of Cognitive Neuroscience.</p>
-<p>Fischl, B., Sereno, M. I., Tootell, R. B., &#38; Dale, A. M. (1999). <i></i>High-Resolution Intersubject Averaging and a Coordinate System for the Cortical Surface.</i>. Human Brain Mapping.</p>
+<p>Fischl, B., Sereno, M. I., Tootell, R. B., &#38; Dale, A. M. (1999). <i></i>High-Resolution Intersubject Averaging and a Coordinate System for the Cortical Surface</i>. Human Brain Mapping.</p>
 <p>Glasser, M. F., Coalson, T. S., Robinson, E. C., Hacker, C. D., Harwell, J., Yacoub, E., Ugurbil, K., Andersson, J., Beckmann, C. F., Jenkinson, M., Smith, S. M., &#38; Van Essen, D. C. (2016). <i>A Multi-Modal Parcellation of Human Cerebral Cortex</i>. Nature.</p>
