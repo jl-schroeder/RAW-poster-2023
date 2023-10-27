@@ -113,7 +113,7 @@ author:
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:janlschroede@uni-osnbrueck.de?subject=RAW 2023 Poster"
+      url: "mailto:janlschroede@uni-osnabrueck.de?subject=RAW 2023 Poster"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       # url: "https://twitter.com/"
